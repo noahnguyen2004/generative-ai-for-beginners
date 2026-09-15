@@ -1,0 +1,40 @@
+# ಸ್ವಯಂ-ನಿರ್ದೇಶಿತ ಅಧ್ಯಯನಕ್ಕಾಗಿ ಸಂಪನ್ಮೂಲಗಳು
+
+ಈ ಪಾಠವನ್ನು ಟರ್ಮಿನಾಲಾಜಿ ಮತ್ತು ಪಾಠಗಳಿಗಾಗಿ OpenAI ಮತ್ತು Microsoft Foundry ನ ಮೂಲ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಉಲ್ಲೇಖವಾಗಿ ಬಳಸಿಕೊಂಡು ನಿರ್ಮಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಸ್ವಂತ ಸ್ವಯಂ-ನಿರ್ದೇಶಿತ ಅಧ್ಯಯನ ಯಾತ್ರೆಗಳಿಗೆ ಇಲ್ಲಿದೆ ಸಮಗ್ರವಲ್ಲದ ಒಂದು ಪಟ್ಟಿಯನ್ನು ನೀಡಲಾಗಿದೆ. ಕೆಳಗಿನ ಪ್ರತಿಯೊಂದು ಲಿಂಕ್ தற்போதಿನ, ಬೆಂಬಲಿತ ವಸ್ತುಗಳಿಗೆ ಸೂಚಿಸುತ್ತದೆ.
+
+## 1. ಪ್ರಥಮಿಕ ಸಂಪನ್ಮೂಲಗಳು
+
+| ಶೀರ್ಷಿಕೆ/ಲಿಂಕ್ | ವಿವರಣೆ |
+| :--- | :--- |
+| [OpenAI ಮಾದರಿಗಳೊಂದಿಗೆ ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಪ್ರಾಂಪ್ಟ್‌ಗೆ ಸೇರುವಷ್ಟು ಹೆಚ್ಚಿನ ಉದಾಹರಣೆಗಳ ಮೇಲೆ ತರಬೇತಿ ನೀಡುವ ಮೂಲಕ ಫ್ಯೂ-ಶಾಟ್ ಲರ್ನಿಂಗ್ ಅನ್ನು ಸುಧಾರಿಸುತ್ತದೆ - ಖರ್ಚು ಉಳಿಸುವದು, ಪ್ರತಿಕ್ರಿಯೆಯ ಗುಣಮಟ್ಟವನ್ನು ಸುಧಾರಿಸುವದು, ಮತ್ತು ಕಡಿಮೆ ವಿಳಂಬದ ವಿನಂತಿಗಳನ್ನು ಸಾಧ್ಯ ಮಾಡುವುದು. **OpenAI ನಿಂದ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಅವಲೋಕನವನ್ನು ಪಡೆಯಿರಿ.** |
+| [Microsoft Foundry ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಯಾಕೆ ಬಳಸಬೇಕು](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | **ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಎಂದರೇನು (ಅವಧಾರಣೆ)**, ಇದನ್ನು ಯಾಕೆ ಪರಿಗಣಿಸಬೇಕು, ಯಾವ ಡೇಟಾವನ್ನು ಬಳಸಬೇಕು ಮತ್ತು ಗುಣಮಟ್ಟವನ್ನು ಹೇಗೆ ಅಳೆಯಬೇಕು ಎಂಬುದನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ - ಪ್ಲಸ್ SFT, DPO, ಅಥವಾ RFT ಯಾವಾಗ ಸೂಕ್ತoen. |
+| [ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಜೊತೆ ಮಾದರಿಯ ಕಸ್ಟಮೈಸ್ ಮಾಡುವುದು](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | ಪೋರ್ಟಲ್, OpenAI / Foundry Python SDK, ಅಥವಾ REST API ಬಳಸಿ Microsoft Foundryಯಲ್ಲಿ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡುವ **ಅಂತಿಮ-ತಾಣದ (ಪ್ರಕ್ರಿಯೆ)** - ಡೇಟಾ ತಯಾರಿ, ತರಬೇತಿ, ಚೆಕ್‌ಪಾಯಿಂಟ್‌ಗಳು ಮತ್ತು ಬಿಡುಗಡೆ ಸೇರಿದ್ದು. |
+| [ನಿರಂತರ ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | ಈಗಾಗಲೇ ಫೈನ್-ಟ್ಯೂನ್ ಮಾಡಲಾದ ಮಾದರಿಯನ್ನು ಮೂಲ ಮಾದರಿಯಾಗಿ ಆರಿಸಿಕೊಂಡು ಹೊಸ ತರಬೇತಿ ಉದಾಹರಣೆಗಳ ಮೇಲೆ **ಅನ್ನಷ್ಟು ಫೈನ್-ಟ್ಯುನಿಂಗ್‌ ಮಾಡುವುದು** ಎಂದು ಪುನರಾವರ್ತಿತ ಪ್ರಕ್ರಿಯೆ. |
+| [ಉಪಕರಣ (ಕಾರ್ಯ) ಕರೆ ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | ನಿಮ್ಮ ಮಾದರಿಯನ್ನು **ಉಪಕರಣ-ಕರೆಗೆ ಸಂಬಂಧಿಸಿದ ಉದಾಹರಣೆಗಳೊಂದಿಗೆ ಫೈನ್-ಟ್ಯುನಿಂಗ್** ಮಾಡುವುದರಿಂದ ಪ್ರOutputs ಬಹಿರ್ಗತಿಸುವುದು - ಹೆಚ್ಚು ನಿಖರ, ಸದುದರ, ಸಮಾನರೂಪದಲ್ಲಿ ಪ್ರತಿಕ್ರಿಯೆಗಳು ಕಡಿಮೆ ಪ್ರಾಂಪ್ಟ್ ಟೋಕನ್ ಗಳನ್ನು ಬಳಸುತ್ತವೆ. |
+| [ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾದರಿಗಳು: Microsoft Foundry ಮಾರ್ಗದರ್ಶನ](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | **ಯಾವ ಮಾದರಿಗಳು ಫೈನ್-ಟ್ಯುನಾ ಮಾಡಬಹುದು**, ಇವರ ಬೆಂಬಲಿತ ವಿಧಾನಗಳು (SFT / DPO / RFT), ಮತ್ತು ಅವು ಲಭ್ಯವಿರುವ ಪ್ರಾಂತ್ಯಗಳನ್ನು ನೋಡಿ. |
+| [ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಅವಲೋಕನ: ತಂತ್ರಗಳು ಮತ್ತು ವಿಧಾನಗಳು](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | ಮೂರು ತರಬೇತಿ ತಂತ್ರಗಳು (SFT, DPO, RFT) ಮತ್ತು ಎರಡು ವಿಧಾನಗಳು (ಸೆರ್ವರ್‌ಲೆಸ್ ವಿರುದ್ಧ ನಿರ್ವಹಿತ ಕಂಪ್ರ್ಯೂಟ್)ಗಳನ್ನು ಹೋಲಿಸಿ, ಮೂಲ ಮಾದರಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡುವುದು ಮತ್ತು ಪ್ರಾರಂಭಿಸುವ ಮೇಲಿನ ಮಾರ್ಗದರ್ಶನ. |
+| **ಪಾಠ**: [Microsoft Foundryನಲ್ಲಿ ಮಾದರಿಯನ್ನು ಫೈನ್-ಟ್ಯುನ್ ಮಾಡುವುದು](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | ಉದಾಹರಣಾ ಡೇಟಾಸೆಟ್ ರಚಿಸಿ, ಫೈನ್-ಟ್ಯುನಿಂಗ್‌ಗೆ ತಯಾರಿಸಿ, ಪ್ರಸ್ತುತ ಬೆಂಬಲಿತ ಮಾದರಿಯಾದ `gpt-4.1-mini` ಮೇಲೆ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಕೆಲಸವನ್ನು ಚಾಲನೆ ಮಾಡಿ ಮತ್ತು Azure ಮೇಲಿನ ಫೈನ್-ಟ್ಯುನ್ಡ್ ಮಾದರಿಯನ್ನು ಬಿಡುಗಡೆ ಮಾಡಿ. |
+| **ಪಾಠ**: [ಸೆರ್ವರ್ ಲೆಸ್ API ಬಿಡುಗಡೆಗಳೊಂದಿಗೆ ಫೈನ್-ಟ್ಯುನ್ಮಾಡುವುದು](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | ಮುಕ್ತ ಮತ್ತು ಪಾಲುದಾರ ಮಾದರಿಗಳನ್ನು (Phi, Llama, Mistral, ಮತ್ತಿತರ) ನಿಮ್ಮ ಡೇಟಾಸೆಟ್‌ಗಳಿಗೆ ಅನುಕೂಲವಾಗಿ _ಕೆಳಸಂಚಿಕೆ, UI ಆಧಾರಿತ ಕಾರ್ಯಪ್ರವಾಹದಲ್ಲಿ_ Microsoft Foundry ನಲ್ಲಿ ಹೊಂದಿಸಿ. |
+| **ಪಾಠ**: [Azure Databricks ಮೇಲೆ Hugging Face ಮಾದರಿಗಳನ್ನು ಫೈನ್-ಟ್ಯುನಮ್ ಮಾಡುವುದು](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Azure Databricks ಮತ್ತು Hugging Face ತರಬೇತುದಾರರು ಬಳಸಿ `transformers` ಲೈಬ್ರರಿ ಮೂಲಕ ಏಕ GPU ನಲ್ಲಿ Hugging Face ಮಾದರಿಯನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡಿ. |
+| **ತರಬೇತಿ**: [Azure Machine Learning ಮೂಲಕ ಫೌಂಡೇಶನ್ ಮಾದರಿಯನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡುವುದು](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Azure Machine Learning ಮಾದರಿ ವಿವರಣಿಕೆ ಬಹುಶಃ ಬಹುಮುಖ್ಯ ಮುಕ್ತ ಮೂಲ ಮಾದರಿಗಳನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ಇದೊಂದು [Azure ML ಜನರೇಟಿವ್ AI ಅಧ್ಯಯನ ಮಾರ್ಗ](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) ಭಾಗವಾಗಿದೆ. |
+| **ಪಾಠ**: [Weights & Biases ಬಳಸಿ Azure OpenAI ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | W&B ನೊಂದಿಗೆ Azure ನಲ್ಲಿ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ರನ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ. OpenAI ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾರ್ಗದರ್ಶನವನ್ನು Azure ವಿಶೇಷ ಹಂತಗಳೊಂದಿಗೆ ಮತ್ತು ಪ್ರಯೋಗದ ಟ್ರ್ಯಾಕಿಂಗ್ ಜೊತೆಗೆ ವಿಸ್ತರಿಸುತ್ತದೆ. |
+
+## 2. ದ್ವಿತೀಯಿಕ ಸಂಪನ್ಮೂಲಗಳು
+
+ಈ ವಿಭಾಗವೆಲ್ಲ ಹೆಚ್ಚಿನ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಒಳಗೊಂಡಿದೆ, ಪಾಠದಲ್ಲಿ ಪ್ರವೇಶಿಸಲು ಸಮಯವು ಇರಲಿಲ್ಲ. ಈ ವಿಷಯದ ಸುತ್ತಲೂ ನಿಮ್ಮ ಸ್ವಂತ ಪರಿಣತಿಯನ್ನು ನಿರ್ಮಿಸಲು ಅವುಗಳನ್ನು ಬಳಸದಿರಿ.
+
+| ಶೀರ್ಷಿಕೆ/ಲಿಂಕ್ | ವಿವರಣೆ |
+| :--- | :--- |
+| **OpenAI ಕೂಕ್‌ಬುಕ್**: [ಚಾಟ್ ಮಾದರಿಯ ಫೈನ್-ಟ್ಯುನಿಂಗ್‌ಗಾಗಿ ಡೇಟಾ ತಯಾರಿ ಮತ್ತು ವಿಶ್ಲೇಷಣೆ](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | ಫೈನ್-ಟ್ಯುನಿಂಗ್‍ಗೆ ಮುನ್ನ ಚಾಟ್ ಡೇಟಾಸೆಟ್ ಅನ್ನು ಪೂರ್ವ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿ ಮತ್ತು ವಿಶ್ಲೇಷಿಸಿ: ಫಾರ್ಮ್ಯಾಟ್ ತಪ್ಪುಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಮೂಲಾಭಿವೃದ್ಧಿ ಅಂಕಿಅಂಶ ಪಡೆಯಿರಿ ಮತ್ತು ಟೋಕನ್ ಸಂಖ್ಯೆಗಳ (ಮತ್ತು ವೆಚ್ಚ) ಅಂದಾಜಿಸಿ. ಇದು [OpenAI ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾರ್ಗದರ್ಶನ](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) ಜೋಡಿ ಸಹ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. |
+| **OpenAI ಕೂಕ್‌ಬುಕ್**: [Retrieval Augmented Generation (RAG) ಗೆ ಫೈನ್-ಟ್ಯುನ್ಡ್ ಮಾಡುವುದು Qdrant ಜೊತೆಗೆ](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | RAG ಗಾಗಿ OpenAI ಮಾದರಿಗಳನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡುವ ಸಂಪೂರ್ಣ ಉದಾಹರಣೆ, Qdrant ಮತ್ತು ಫ್ಯೂ-ಶಾಟ್ ಲರ್ನಿಂಗ್ ಅನ್ನು ಸಂಯೋಜಿಸಿ ಕಾರ್ಯಕ್ಷಮತೆ ಹೆಚ್ಚಿಸಲು ಮತ್ತು ಕಲ್ಪನೆಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು. |
+| **OpenAI ಕೂಕ್‌ಬುಕ್**: [Weights & Biases ಬಳಸಿ GPT ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | ಮಾದರಿ ತರಬೇತಿ ಮತ್ತು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಅನ್ನು W&B ಮೂಲಕ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಮೊದಲು ಅವರ [OpenAI ಫೈನ್-ಟ್ಯುನಿಂಗ್](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) ಮಾರ್ಗದರ್ಶನವನ್ನು ಓದಿ, ನಂತರ ಕೂಕ್‌ಬುಕ್ ಅಭ್ಯಾಸವನ್ನು ಪ್ರಯತ್ನಿಸಿ. |
+| **Hugging Face ಪಾಠ**: [Hugging Face TRL ಬಳಸಿ LLM ಗಳನ್ನು ಹೇಗೆ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡುವುದು](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Hugging Face TRL, Transformers, ಮತ್ತು ಡೇಟಾಸೆಟ್‌ಗಳನ್ನು ಬಳಸಿ ಮುಕ್ತ LLM ಗಳನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡಿ: ಬಳಕೆಯ ಕೇಸ್ ನಿಗದಿ ಮಾಡಿ, ಡೆವ್ ಪರಿಸರ ಸೆಟ್ ಅಪ್ ಮಾಡಿ, ಡೇಟಾಸೆಟ್ ತಯಾರಿಸಿ, ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡಿ, ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ ಮತ್ತು ಬಿಡುಗಡೆ ಮಾಡಿ. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | ಬಹುಮತ ಮಾದರಿ ಪ್ರಕಾರಗಳನ್ನು ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾಡಲು Hugging Face ನಿಂದ ಒಂದು ನೊ-ಕೋಡ್ / ಕಡಿಮೆ-ಕೋಡ್ ಲೈಬ್ರರಿ. ನಿಮ್ಮ ಸ್ವಂತ ಕ್ಲೌಡ್‌ನಲ್ಲಿ, Hugging Face Spaces ನಲ್ಲಿ, ಅಥವಾ ಸ್ಥಳೀಯವಾಗಿ GUI, CLI, ಅಥವಾ YAML ಕಾನ್ಫಿಗ್ ಮೂಲಕ ಚಾಲನೆ ಮಾಡಿ. |
+| **Unsloth**: [LLM ಗಳ ಫೈನ್-ಟ್ಯುನಿಂಗ್ ಮಾರ್ಗದರ್ಶನ](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | ಸ್ಥಳೀಯ LLM ಫೈನ್-ಟ್ಯೂನಿಂಗ್ ಮತ್ತು ಸुदೃಢೀಕರಣ ಕಲಿಕೆಯ (reinforcement learning) ಸರಳೀಕರಿಸಿದ ಓಪನ್-ಸೋರ್ಸ್ ಫ್ರೇಮ್‌ವರ್ಕ್, ಸಿದ್ಧ [ನೋಟ್ಬುಕ್ಸ್](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst) ಜೊತೆಗೆ. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**ಅಸ್ವೀಕಾರ**:
+ಈ ದಸ್ತಾವೇಜು AI ಅನುವಾದ ಸೇವೆ [Co-op Translator](https://github.com/Azure/co-op-translator) ಬಳಸಿ ಅನುವಾದಿಸಲಾಗಿದೆ. ನಾವು ನಿಖರತೆಯನ್ನು ಸಾಧಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದರೂ, ದಯವಿಟ್ಟು ಗಮನಿಸಿ, ಸ್ವಯಂಚಾಲಿತ ಅನುವಾದಗಳಲ್ಲಿ ದೋಷಗಳು ಅಥವಾ ಅಸಡ್ಡೆಗಳು ಇರಬಹುದು. ಮೂಲ ಭಾಷೆಯಲ್ಲಿರುವ ಮೂಲ ದಸ್ತಾವೇಜು ಪ್ರಾಮಾಣಿಕ ಮೂಲವೆಂದು ಪರಿಗಣಿಸಬೇಕು. ಪ್ರಮುಖ ಮಾಹಿತಿಗಾಗಿ, ವೃತ್ತಿಪರ ಮಾನವ ಅನುವಾದವನ್ನು ಶಿಫಾರಸು ಮಾಡಲಾಗುತ್ತದೆ. ಈ ಅನುವಾದವನ್ನು ಬಳಸುವ ಮೂಲಕ ಉಂಟಾಗುವ ಯಾವುದೇ ತಪ್ಪು ಅರ್ಥಗಳ ಅಥವಾ ತಪ್ಪು ವ್ಯಾಖ್ಯಾನಗಳ ಬಗ್ಗೆ ನಾವು ಹೊಣೆಗಾರರಲ್ಲ.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

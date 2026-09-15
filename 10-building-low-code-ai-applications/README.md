@@ -1,6 +1,6 @@
 # Building Low Code AI Applications
 
-[![Building Low Code AI Applications](./images/10-lesson-banner.png?WT.mc_id=academic-105485-koreyst)](https://aka.ms/gen-ai-lesson10-gh?WT.mc_id=academic-105485-koreyst)
+[![Building Low Code AI Applications](./images/10-lesson-banner.png?WT.mc_id=academic-105485-koreyst)](https://youtu.be/1vzq3Nd8GBA?si=h6LHWJXdmqf6mhDg)
 
 > _(Click the image above to view video of this lesson)_
 
@@ -8,7 +8,7 @@
 
 Now that we've learned how to build image generating applications, let's talk about low code. Generative AI can be used for a variety of different areas including low code, but what is low code and how can we add AI to it?
 
-Building apps and solutions has become more easier for traditional developers and non-developers through the use of Low Code Development Platforms. Low Code Development Platforms enable you to build apps and solutions with little to no code. This is achieved by providing a visual development environment that enables you to drag and drop components to build apps and solutions. This enables you to build apps and solutions faster and with less resources. In this lesson, we dive deep into how to use Low Code and how to enhance low code development with AI using Power Platform.
+Building apps and solutions has become easier for traditional developers and non-developers through the use of Low Code Development Platforms. Low Code Development Platforms enable you to build apps and solutions with little to no code. This is achieved by providing a visual development environment that enables you to drag and drop components to build apps and solutions. This enables you to build apps and solutions faster and with less resources. In this lesson, we dive deep into how to use Low Code and how to enhance low code development with AI using Power Platform.
 
 The Power Platform provides organizations with the opportunity to empower their teams to build their own solutions through an intuitive low-code or no-code environment. This environment helps simplify the process of building solutions. With Power Platform, solutions can be built in days or weeks instead of months or years. Power Platform consists of five key products: Power Apps, Power Automate, Power BI, Power Pages and Copilot Studio.
 
@@ -18,6 +18,7 @@ This lesson covers:
 - Introduction to Copilot and how to use it
 - Using Generative AI to build apps and flows in Power Platform
 - Understanding the AI Models in Power Platform with AI Builder
+- Building intelligent agents with Microsoft Copilot Studio
 
 ## Learning Goals
 
@@ -30,6 +31,8 @@ By the end of this lesson, you will be able to:
 - Build an Invoice Processing Flow that uses AI to extract information from invoices.
 
 - Apply best practices when using the Create Text with GPT AI Model.
+
+- Understand what Microsoft Copilot Studio is and how to build intelligent agents with it.
 
 The tools and technologies that you will use in this lesson are:
 
@@ -53,7 +56,7 @@ You can use Copilot driven functionalities as a feature in your app screens to e
 
 AI Builder is a low-code AI capability available in Power Platform that enables you to use AI Models to help you to automate processes and predict outcomes. With AI Builder you can bring AI to your apps and flows that connect to your data in Dataverse or in various cloud data sources, such as SharePoint, OneDrive or Azure.
 
-Copilot is available in all of the Power Platform products: Power Apps, Power Automate, Power BI, Power Pages and Power Virtual Agents. AI Builder is available in Power Apps and Power Automate. In this lesson, we will focus on how to use Copilot and AI Builder in Power Apps and Power Automate to build a solution for our education startup.
+Copilot is available in all of the Power Platform products: Power Apps, Power Automate, Power BI, Power Pages and Copilot Studio (formerly Power Virtual Agents). AI Builder is available in Power Apps and Power Automate. In this lesson, we will focus on how to use Copilot and AI Builder in Power Apps and Power Automate to build a solution for our education startup.
 
 ### Copilot in Power Apps
 
@@ -67,7 +70,31 @@ As part of the Power Platform, Power Automate lets users create automated workfl
 
 The copilot AI assistant feature in Power Automate enables you to describe what kind of flow you need and what actions you want your flow to perform. Copilot then generates a flow based on your description. You can then customize the flow to meet your needs. The AI Copilot also generates and suggests the actions you need to perform the task you want to automate. We will look at what flows are and how you can use them in Power Automate in this lesson later. You can then customize the actions to meet your needs using the AI Copilot assistant feature through conversational steps. This feature is readily available from the Power Automate home screen.
 
-## Assignment: manage student assignments and invoices for our startup, using Copilot
+## Building Intelligent Agents with Microsoft Copilot Studio
+
+[Microsoft Copilot Studio](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio?WT.mc_id=academic-105485-koreyst) (formerly Power Virtual Agents) is the low-code member of the Power Platform for building **AI agents** — conversational copilots that can answer questions, take actions, and automate tasks on behalf of your users. Just like the rest of Power Platform, you build these agents in a visual, natural-language-first experience: you describe what you want the agent to do, and Copilot Studio helps scaffold its instructions, knowledge, and actions.
+
+For our education startup, you could build an agent that answers student questions about courses, checks assignment deadlines, and even emails an instructor — all without writing code.
+
+Here are some of the latest capabilities that make Copilot Studio powerful:
+
+- **Generative answers from your knowledge**. Instead of hand-authoring every conversation, you can connect **knowledge sources** — public websites, SharePoint, OneDrive, Dataverse, uploaded files, or enterprise data through connectors — and the agent generates grounded answers from them.
+
+- **Generative orchestration**. Rather than relying on rigid trigger phrases, the agent uses AI to understand a request and dynamically decide which knowledge, topics, and actions to combine to fulfil it, including chaining several steps together.
+
+- **Actions and connectors**. Agents can *do* things, not just chat. You can give an agent actions backed by the 1,500+ prebuilt Power Platform connectors, Power Automate flows, custom REST APIs, prompts, or **Model Context Protocol (MCP)** servers.
+
+- **Autonomous agents**. Agents aren't limited to responding in a chat window. You can build **autonomous agents** that are triggered by events — such as a new email, a new record in Dataverse, or a file being uploaded — and then act in the background to complete a task.
+
+- **Multi-agent orchestration**. Agents can call other agents. A Copilot Studio agent can hand off to, or be extended by, other agents, including agents published to Microsoft 365 Copilot and agents built in Microsoft Foundry.
+
+- **Model choice**. Beyond the built-in models, you can bring models from the Microsoft Foundry model catalog to tailor how your agent reasons and responds.
+
+- **Publish anywhere**. Once built, an agent can be published to multiple channels — Microsoft Teams, Microsoft 365 Copilot, a website or custom app, and more — with security, authentication, and analytics managed through the Power Platform admin experience.
+
+You can start building your first agent at [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com?WT.mc_id=academic-105485-koreyst) and learn more in the [Microsoft Copilot Studio documentation](https://learn.microsoft.com/microsoft-copilot-studio/?WT.mc_id=academic-105485-koreyst).
+
+## Assignment: Manage student assignments and invoices for our startup, using Copilot
 
 Our startup provides online courses to students. The startup has grown rapidly and is now struggling to keep up with the demand for its courses. The startup has hired you as a Power Platform developer to help them build a low code solution to help them manage their student assignments and invoices. Their solution should be able to help them track and manage student assignments through an app and automate the invoice processing process through a workflow. You have been asked to use Generative AI to develop the solution.
 
@@ -87,7 +114,7 @@ You will build the app using Copilot in Power Apps following the steps below:
 
 1. The AI Copilot will suggest a Dataverse Table with the fields you need to store the data you want to track and some sample data. You can then customize the table to meet your needs using the AI Copilot assistant feature through conversational steps.
 
-   > **Important**: Dataverse is the underlying data platform for Power Platform. It is a low-code data platform for storing the app's data. It is a fully managed service that securely stores data in the Microsoft Cloud and is provisioned within your Power Platform environment. It comes with built-in data governance capabilities, such as data classification, data lineage, fine-grained access control, and more. You can learn more about Dataverse [here](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko).
+   > **Important**: Dataverse is the underlying data platform for Power Platform. It is a low-code data platform for storing the app's data. It is a fully managed service that securely stores data in the Microsoft Cloud and is provisioned within your Power Platform environment. It comes with built-in data governance capabilities, such as data classification, data lineage, fine-grained access control, and more. You can learn more about Dataverse [here](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko).
 
    ![Suggested fields in your new table](./images/copilot-dataverse-table-powerapps.png?WT.mc_id=academic-105485-koreyst)
 
@@ -117,9 +144,9 @@ You will build the app using Copilot in Power Apps following the steps below:
 
 The finance team of our startup has been struggling to keep track of invoices. They have been using a spreadsheet to track the invoices but this has become difficult to manage as the number of invoices has increased. They have asked you to build a table that will help them store, track and manage the information of the invoices they received. The table should be used to build an automation that will extract all the invoice information and store it in the table. The table should also enable the finance team to view the invoices that have been paid and those that have not been paid.
 
-The Power Platform has an underlying data platform called Dataverse that enables you to store the data for your apps and solutions. Dataverse provides a low-code data platform for storing the app's data. It is a fully managed service that securely stores data in the Microsoft Cloud and is provisioned within your Power Platform environment. It comes with built-in data governance capabilities, such as data classification, data lineage, fine-grained access control, and more. You can learn more [about Dataverse here](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko).
+The Power Platform has an underlying data platform called Dataverse that enables you to store the data for your apps and solutions. Dataverse provides a low-code data platform for storing the app's data. It is a fully managed service that securely stores data in the Microsoft Cloud and is provisioned within your Power Platform environment. It comes with built-in data governance capabilities, such as data classification, data lineage, fine-grained access control, and more. You can learn more [about Dataverse here](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro?WT.mc_id=academic-109639-somelezediko).
 
-Why should we use Dataverse for our startup? The standard and custom tables within Dataverse provide a secure and cloud-based storage option for your data. Tables let you store different types of data, similar to how you might use multiple worksheets in a single Excel workbook. You can use tables to store data that is specific to your organization or business need. Some of the benefits our startup will get from using Dataverse include but are not limited to:
+Why should we use Dataverse for our startup? The standard and custom tables within Dataverse provide a secure and cloud-based storage option for your data. Tables let you store different types of data, similar to how you might use multiple worksheets in a single Excel workbook. You can use tables to store data that is specific to your organization or business needs. Some of the benefits our startup will get from using Dataverse include but are not limited to:
 
 - **Easy to manage**: Both the metadata and data are stored in the cloud, so you don't have to worry about the details of how they are stored or managed. You can focus on building your apps and solutions.
 
@@ -182,7 +209,7 @@ With Custom AI Models you can bring your own model into AI Builder so that it ca
 
 The finance team has been struggling to process invoices. They have been using a spreadsheet to track the invoices but this has become difficult to manage as the number of invoices has increased. They have asked you to build a workflow that will help them process invoices using AI. The workflow should enable them to extract information from invoices and store the information in a Dataverse table. The workflow should also enable them to send an email to the finance team with the extracted information.
 
-Now that you know what AI Builder is and why you should use it, let's look at how you can use the Invoice Processing AI Model in AI Builder, that we covered earlier on, to build a workflow that will help the finance team process invoices.
+Now that you know what AI Builder is and why you should use it, let's look at how you can use the Invoice Processing AI Model in AI Builder, which we covered earlier on, to build a workflow that will help the finance team process invoices.
 
 To build a workflow that will help the finance team process invoices using the Invoice Processing AI Model in AI Builder, follow the steps below:
 
@@ -240,5 +267,7 @@ To learn how to use this AI Model in Power Automate, go through the [Add intelli
 ## Great Work! Continue Your Learning
 
 After completing this lesson, check out our [Generative AI Learning collection](https://aka.ms/genai-collection?WT.mc_id=academic-105485-koreyst) to continue leveling up your Generative AI knowledge!
+
+Want to customize and get more out of Copilot? Explore [Awesome Copilot](https://github.com/github/awesome-copilot?WT.mc_id=academic-105485-koreyst) — a community-contributed collection of instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
 
 Head over to Lesson 11 where we will look at how to [integrate Generative AI with Function Calling](../11-integrating-with-function-calling/README.md?WT.mc_id=academic-105485-koreyst)!

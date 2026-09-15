@@ -1,0 +1,40 @@
+# Sumber Untuk Pembelajaran Kendiri
+
+Pengajaran ini dibina menggunakan sumber teras dari OpenAI dan Microsoft Foundry sebagai rujukan untuk terminologi dan tutorial. Berikut adalah senarai tidak komprehensif untuk perjalanan pembelajaran kendiri anda sendiri. Setiap pautan di bawah merujuk kepada bahan semasa yang disokong.
+
+## 1. Sumber Utama
+
+| Tajuk/Pautan | Penerangan |
+| :--- | :--- |
+| [Laras Halus dengan Model OpenAI](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | Laras halus meningkatkan pembelajaran beberapa contoh dengan melatih pada lebih banyak contoh daripada yang boleh dimuatkan dalam prompt - menjimatkan kos, memperbaiki kualiti respons, dan membolehkan permintaan bertindak balas lebih cepat. **Dapatkan gambaran keseluruhan mengenai laras halus dari OpenAI.** |
+| [Bila menggunakan laras halus Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Fahami **apa itu laras halus (konsep)**, mengapa anda harus mempertimbangkannya, data apa yang perlu digunakan, dan bagaimana mengukur kualiti - serta bila SFT, DPO, atau RFT adalah pilihan yang tepat. |
+| [Sesuaikan model dengan laras halus](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Proses **bagaimana untuk laras halus secara menyeluruh** dalam Microsoft Foundry menggunakan portal, OpenAI / Foundry Python SDK, atau REST API - merangkumi penyediaan data, latihan, checkpoint, dan penggunaan. |
+| [Laras halus berterusan](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Proses berulang memilih model yang telah dilaras halus sebagai model asas dan **melaras halus lagi** pada set contoh latihan baru. |
+| [Laras halus dengan pemanggilan alat (fungsi)](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Melaras halus model anda **dengan contoh panggilan alat** meningkatkan keluaran - respons yang lebih tepat, konsisten, dan format yang serupa menggunakan token prompt yang lebih sedikit. |
+| [Model Laras Halus: Panduan Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Cari **model mana yang boleh dilaras halus**, kaedah yang mereka sokong (SFT / DPO / RFT), dan wilayah di mana ia tersedia. |
+| [Gambaran keseluruhan laras halus: teknik dan modaliti](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Bandingkan tiga teknik latihan (SFT, DPO, RFT) dan dua modaliti (serverless vs. managed compute), dengan panduan memilih model asas dan memulakan. |
+| **Tutorial**: [Laras Halus model dalam Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Cipta dataset contoh, sediakan untuk laras halus, jalankan tugas laras halus pada model yang disokong seperti `gpt-4.1-mini`, dan edarkan model laras halus tersebut di Azure. |
+| **Tutorial**: [Laras Halus model dengan penyebaran API serverless](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Sesuaikan model terbuka dan rakan kongsi (Phi, Llama, Mistral, dan lain-lain) mengikut dataset anda _menggunakan alur kerja UI berasaskan kod rendah_ dalam Microsoft Foundry. |
+| **Tutorial**: [Laras Halus model Hugging Face di Azure Databricks](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Laras halus model Hugging Face menggunakan perpustakaan `transformers` pada satu GPU dengan Azure Databricks dan Hugging Face Trainer. |
+| **Latihan**: [Laras Halus model asas dengan Azure Machine Learning](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Katalog model Azure Machine Learning menawarkan banyak model sumber terbuka yang anda boleh laras halus. Sebahagian daripada [Jejak Pembelajaran AI Generatif Azure ML](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst). |
+| **Tutorial**: [Laras Halus Azure OpenAI dengan Weights & Biases](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Jejak dan analisis proses laras halus di Azure dengan W&B. Memperluas panduan laras halus OpenAI dengan langkah khusus Azure dan penjejakan eksperimen. |
+
+## 2. Sumber Sekunder
+
+Bahagian ini merangkum sumber tambahan yang patut diterokai yang kami tidak sempat bincangkan dalam pengajaran. Gunakan ia untuk membina kepakaran anda sendiri mengenai topik ini.
+
+| Tajuk/Pautan | Penerangan |
+| :--- | :--- |
+| **Buku Masak OpenAI**: [Penyediaan dan analisis data untuk laras halus model chat](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Pralakukan dan analisis dataset chat sebelum laras halus: periksa kesilapan format, dapatkan statistik asas, dan anggarkan jumlah token (dan kos). Bersama panduan [OpenAI laras halus](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **Buku Masak OpenAI**: [Laras halus untuk Generasi Beraugmen Pemulihan (RAG) dengan Qdrant](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Contoh komprehensif laras halus model OpenAI untuk RAG, mengintegrasikan Qdrant dan pembelajaran beberapa contoh untuk meningkatkan prestasi dan mengurangkan rekaan maklumat. |
+| **Buku Masak OpenAI**: [Laras Halus GPT dengan Weights & Biases](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Gunakan W&B untuk jejak latihan dan laras halus model. Baca dahulu panduan mereka [OpenAI Laras Halus](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst), kemudian cuba latihan Buku Masak. |
+| **Tutorial Hugging Face**: [Cara Laras Halus LLM dengan Hugging Face TRL](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Laras halus LLM terbuka menggunakan Hugging Face TRL, Transformers, dan dataset: definisikan kes penggunaan, sediakan persekitaran dev, sediakan dataset, laras halus, nilai, dan edarkan. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Perpustakaan tanpa kod / kod rendah dari Hugging Face untuk laras halus pelbagai jenis model. Jalankan di awan anda sendiri, di Hugging Face Spaces, atau secara tempatan melalui GUI, CLI, atau konfigurasi YAML. |
+| **Unsloth**: [Panduan Laras Halus LLM](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Rangka kerja sumber terbuka yang mempermudah laras halus LLM tempatan dan pembelajaran penguatan, dengan [notebook](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst) sedia guna. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Penafian**:
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk ketepatan, sila ambil maklum bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang sahih. Untuk maklumat penting, terjemahan oleh manusia profesional adalah disyorkan. Kami tidak bertanggungjawab terhadap sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

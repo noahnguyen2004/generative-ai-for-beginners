@@ -1,0 +1,40 @@
+# Bronnen Voor Zelfgestuurd Leren
+
+De les is opgebouwd met kernbronnen van OpenAI en Microsoft Foundry als referenties voor de terminologie en tutorials. Hier is een niet-uitputtende lijst voor je eigen zelfgestuurde leertrajecten. Elke onderstaande link verwijst naar actueel, ondersteund materiaal.
+
+## 1. Primaire Bronnen
+
+| Titel/Link | Beschrijving |
+| :--- | :--- |
+| [Fijn afstemmen met OpenAI-modellen](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | Fijn afstemmen verbetert few-shot leren door te trainen op veel meer voorbeelden dan in de prompt passen - kostenbesparing, verbetering van de responskwaliteit en lagere latentie bij verzoeken. **Krijg een overzicht van fijn afstemmen van OpenAI.** |
+| [Wanneer Microsoft Foundry fijn afstemmen te gebruiken](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Begrijp **wat fijn afstemmen is (concept)**, waarom je het zou moeten overwegen, welke data te gebruiken, en hoe je kwaliteit meet - plus wanneer SFT, DPO of RFT geschikt is. |
+| [Een model aanpassen met fijn afstemmen](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Het end-to-end **hoe te (proces)** voor fijn afstemmen in Microsoft Foundry met de portal, de OpenAI / Foundry Python SDK, of de REST API - inclusief data voorbereiding, training, checkpoints en deployment. |
+| [Continue fijn afstemmen](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Het iteratieve proces van het selecteren van een reeds fijn afgestemd model als basismodel en het **verder fijn afstemmen** met nieuwe sets trainingsvoorbeelden. |
+| [Fijn afstemmen met tool (functie) aanroepen](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Fijn afstemmen van je model **met voorbeelden van tool-aanroepen** verbetert de output - accuratere, consistentere, gelijkmatig opgemaakte antwoorden met minder prompt tokens. |
+| [Fijn afstemmen modellen: Microsoft Foundry richtlijnen](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Zoek op **welke modellen fijn af te stemmen zijn**, de ondersteunde methoden (SFT / DPO / RFT), en de regio’s waar ze beschikbaar zijn. |
+| [Overzicht fijn afstemmen: technieken en modaliteiten](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Vergelijk de drie trainingsmethoden (SFT, DPO, RFT) en de twee modaliteiten (serverless vs. managed compute), met advies over het kiezen van een basismodel en beginnen. |
+| **Tutorial**: [Fijn stem een model af in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Maak een voorbeelddataset, bereid voor op fijn afstemmen, voer een fijn afstem taak uit op een momenteel ondersteund model zoals `gpt-4.1-mini`, en zet het fijn afgestemde model in op Azure. |
+| **Tutorial**: [Fijn afgestemde modellen met serverloze API-implementaties](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Pas open en partnermodellen (Phi, Llama, Mistral en meer) aan je datasets aan _met een low-code, UI-gebaseerde workflow_ in Microsoft Foundry. |
+| **Tutorial**: [Fijn afstemmen van Hugging Face-modellen op Azure Databricks](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Fijn afstemmen van een Hugging Face-model met de `transformers` bibliotheek op één GPU met Azure Databricks en de Hugging Face Trainer. |
+| **Training**: [Fijn een fundatiemodel afstemmen met Azure Machine Learning](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | De Azure Machine Learning modelcatalogus biedt veel open-source modellen die je kunt fijn afstemmen. Onderdeel van het [Azure ML Generative AI Learning Path](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst). |
+| **Tutorial**: [Azure OpenAI fijn afstemmen met Weights & Biases](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Volg en analyseer fijn-afstemtaken op Azure met W&B. Breidt de OpenAI fijn-afstemgids uit met Azure-specifieke stappen en experiment tracking. |
+
+## 2. Secundaire Bronnen
+
+Deze sectie bevat aanvullende bronnen die het waard zijn om te verkennen, maar die we niet hebben kunnen behandelen in de les. Gebruik ze om je eigen expertise rond dit onderwerp op te bouwen.
+
+| Titel/Link | Beschrijving |
+| :--- | :--- |
+| **OpenAI Cookbook**: [Data voorbereiding en analyse voor chatmodel fijn afstemmen](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Voorverwerken en analyseren van een chat dataset vóór het fijn afstemmen: controleer op formaatfouten, verkrijg basisstatistieken, en schat tokenaantallen (en kosten). Combineert met de [OpenAI fijn-afstemgids](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **OpenAI Cookbook**: [Fijn afstemmen voor Retrieval Augmented Generation (RAG) met Qdrant](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Een uitgebreid voorbeeld van het fijn afstemmen van OpenAI-modellen voor RAG, met integratie van Qdrant en few-shot leren om prestaties te verbeteren en verzinsels te verminderen. |
+| **OpenAI Cookbook**: [Fijn afstemmen van GPT met Weights & Biases](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Gebruik W&B om modeltraining en fijn afstemmen te volgen. Lees eerst hun [OpenAI Fine-Tuning](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) gids, probeer daarna de Cookbook-oefening. |
+| **Hugging Face Tutorial**: [Hoe LLM’s fijn afstemmen met Hugging Face TRL](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Fijn afstemmen van open LLM’s met Hugging Face TRL, Transformers en datasets: definieer een gebruikssituatie, zet een ontwikkelomgeving op, bereid een dataset voor, fijn afstemmen, evalueren en implementeren. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Een no-code / low-code bibliotheek van Hugging Face voor het fijn afstemmen van vele modeltypen. Draai het in je eigen cloud, op Hugging Face Spaces, of lokaal via GUI, CLI, of YAML-configuratie. |
+| **Unsloth**: [Gids voor fijn afstemmen van LLM’s](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Een open-source framework dat lokaal fijn afstemmen van LLM’s en reinforcement learning vereenvoudigt, met kant-en-klare [notebooks](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst). |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Disclaimer**:
+Dit document is vertaald met behulp van de AI vertaaldienst [Co-op Translator](https://github.com/Azure/co-op-translator). Hoewel we streven naar nauwkeurigheid, dient u er rekening mee te houden dat geautomatiseerde vertalingen fouten of onnauwkeurigheden kunnen bevatten. Het originele document in de oorspronkelijke taal moet worden beschouwd als de gezaghebbende bron. Voor kritieke informatie wordt professionele menselijke vertaling aanbevolen. Wij zijn niet aansprakelijk voor eventuele misverstanden of verkeerde interpretaties die voortvloeien uit het gebruik van deze vertaling.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

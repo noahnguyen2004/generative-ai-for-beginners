@@ -1,17 +1,13 @@
 from openai import OpenAI
 import os
-import dotenv
+from dotenv import load_dotenv
 
-# import dotenv
-dotenv.load_dotenv()
+# load environment variables from .env file
+load_dotenv()
 
 # configure Azure OpenAI service client 
-client = OpenAI(
-  api_key=os.environ['OPENAI_API_KEY']
-  )
-
-#deployment=os.environ['OPENAI_DEPLOYMENT']
-deployment="gpt-3.5-turbo"
+client = OpenAI()
+deployment="gpt-5-mini"
 
 # add your completion code
 question = input("Ask your questions on python language to your study buddy: ")
@@ -26,12 +22,11 @@ Whenever certain questions are asked, you need to provide response in below form
 
 Provide answer for the question: {question}
 """
-messages = [{"role": "user", "content": prompt}]  
-# make completion
-completion = client.chat.completions.create(model=deployment, messages=messages)
+# make a request using the Responses API
+response = client.responses.create(model=deployment, input=prompt, store=False)
 
 # print response
-print(completion.choices[0].message.content)
+print(response.output_text)
 
 #  very unhappy _____.
 

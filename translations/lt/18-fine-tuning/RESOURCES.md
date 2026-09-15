@@ -1,0 +1,40 @@
+# Ištekliai savarankiškam mokymuisi
+
+Pamoka buvo sukurta pasitelkiant pagrindinius OpenAI ir Microsoft Foundry išteklius kaip terminologijos ir mokomųjų medžiagų atskaitos taškus. Čia pateiktas nevisavertis sąrašas jūsų savarankiškiems mokymosi keliams. Žemiau pateiktos nuorodos veda į dabartinę, palaikomą medžiagą.
+
+## 1. Pagrindiniai ištekliai
+
+| Pavadinimas/Nuoroda | Aprašymas |
+| :--- | :--- |
+| [Fine-tuning with OpenAI Models](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | Fine-tuning pagerina few-shot mokymąsi, treniruojant daug daugiau pavyzdžių nei telpa rodinyje - taupant kaštus, gerinant atsakymo kokybę ir leidžiant vykdyti mažesnio delsimo užklausas. **Gaukite OpenAI fine-tuning apžvalgą.** |
+| [When to use Microsoft Foundry fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Supraskite **kas yra fine-tuning (konceptas)**, kodėl verta jį svarstyti, kokius duomenis naudoti ir kaip matuoti kokybę - taip pat kada tinkamiausia SFT, DPO ar RFT. |
+| [Customize a model with fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Nuoseklus **kaip atlikti (procesas)** fine-tuning Microsoft Foundry naudojant portalą, OpenAI / Foundry Python SDK ar REST API - apimantis duomenų paruošimą, treniravimą, kontrolinius taškus ir diegimą. |
+| [Continuous fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Iteracinis procesas, kai jau fine-tunintas modelis pasirenkamas kaip pagrindinis ir **toliau yra fine-tun'inamas** naujais treniravimo pavyzdžių rinkiniais. |
+| [Fine-tuning with tool (function) calling](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Fine-tun'inimas modelio **su įrankių kvietimo pavyzdžiais** pagerina išvestį - tiksliau, nuosekliau ir vienodai formatuotais atsakymais naudojant mažesnį promptų žodžių skaičių. |
+| [Fine-tuning models: Microsoft Foundry guidance](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Sužinokite **kuriuos modelius galima fine-tun'inti**, kokias metodikas jie palaiko (SFT / DPO / RFT) ir regionus, kuriuose jie prieinami. |
+| [Fine-tuning overview: techniques and modalities](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Palyginkite tris treniravimo technikas (SFT, DPO, RFT) ir dvi modalumas (be serverio vs. valdomas skaičiavimas), su gairėmis, kaip pasirinkti pagrindinį modelį ir pradėti. |
+| **Tutorial**: [Fine-tune a model in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Sukurkite pavyzdinį duomenų rinkinį, pasiruoškite fine-tuning'ui, paleiskite fine-tuning užduotį palaikomam modeliui, kaip `gpt-4.1-mini`, ir diegkite fine-tuned modelį Azure aplinkoje. |
+| **Tutorial**: [Fine-tune models with serverless API deployments](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Pritaikykite atvirus ir partnerių modelius (Phi, Llama, Mistral ir kitus) savo duomenų rinkinams _naudojant mažo kodo, UI pagrįstą darbo srautą_ Microsoft Foundry aplinkoje. |
+| **Tutorial**: [Fine-tune Hugging Face models on Azure Databricks](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Fine-tuninkite Hugging Face modelį naudojant `transformers` biblioteką ant vieno GPU Azure Databricks aplinkoje ir Hugging Face Trainer. |
+| **Training**: [Fine-tune a foundation model with Azure Machine Learning](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Azure Machine Learning modelių kataloge yra daug atviro kodo modelių, kuriuos galite fine-tun'inti. Tai yra dalis [Azure ML Generatyvaus AI mokymosi kelio](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst). |
+| **Tutorial**: [Azure OpenAI fine-tuning with Weights & Biases](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Sekite ir analizuokite fine-tuning vykdymą Azure naudojant W&B. Tai išplečia OpenAI fine-tuning vadovą su Azure specifinėmis žingsnių ir eksperimentų stebėjimo instrukcijomis. |
+
+## 2. Antriniai ištekliai
+
+Šioje skiltyje surinkti papildomi ištekliai, verti dėmesio, kurių pamokoje nesuspėjome aptarti. Naudokite juos savo žinių apie šią temą plėtimui.
+
+| Pavadinimas/Nuoroda | Aprašymas |
+| :--- | :--- |
+| **OpenAI Virtuvė**: [Duomenų ruošimas ir analizė pokalbių modelio fine-tuning'ui](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Išankstinio apdorojimo ir pokalbių duomenų rinkinio analizė prieš fine-tuning: tikrinkite formatavimo klaidas, gaukite pagrindines statistiką ir įvertinkite žodžių skaičių (bei kainą). Derinama su [OpenAI fine-tuning gidu](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **OpenAI Virtuvė**: [Fine-tuning Retrieval Augmented Generation (RAG) su Qdrant](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Išsamus pavyzdys, kaip fine-tun'inti OpenAI modelius RAG užduočiai, integruojant Qdrant ir few-shot mokymąsi, kad pagerinti našumą ir sumažinti išgalvotų atsakymų skaičių. |
+| **OpenAI Virtuvė**: [Fine-tuning GPT su Weights & Biases](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Naudokite W&B modeliui apmokyti ir fine-tun'inti. Pirmiausia perskaitykite jų [OpenAI Fine-Tuning](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) vadovą, tada išbandykite Virtuvės pratimą. |
+| **Hugging Face Pamoka**: [Kaip Fine-Tune LLM su Hugging Face TRL](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Fine-tune atvirus LLM naudodami Hugging Face TRL, Transformers ir duomenų rinkinius: apibrėžkite naudojimo atvejį, paruoškite kūrimo aplinką, duomenų rinkinį, fine-tune, įvertinkite ir diekite. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Be kodų / mažo kodo biblioteka iš Hugging Face, skirta įvairaus tipo modelių fine-tuning. Veikia jūsų debesyje, Hugging Face Spaces arba lokaliai per GUI, CLI ar YAML konfigūraciją. |
+| **Unsloth**: [Fine-tuning LLM vadovas](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Atviro kodo sistema, supaprastinanti lokalią LLM fine-tuning ir sustiprinto mokymosi procesą, su paruoštais naudoti [užrašų knygelėmis](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst). |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Atsakomybės apribojimas**:
+Šis dokumentas buvo išverstas naudojant dirbtinio intelekto vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba laikomas autoritetingu šaltiniu. Svarbiai informacijai rekomenduojama naudoti profesionalų žmogiškąjį vertimą. Mes neatsakome už jokius nesusipratimus ar neteisingą interpretaciją, kilusią naudojantis šiuo vertimu.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

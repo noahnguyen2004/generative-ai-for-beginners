@@ -1,0 +1,40 @@
+# Erőforrások Önálló Tanuláshoz
+
+A leckét az OpenAI és a Microsoft Foundry alapvető erőforrásai alapján építettük fel a terminológia és a tananyagok referenciaanyagaként. Íme egy nem teljes körű lista az önálló tanulási útjaidhoz. Az alábbi minden link aktuális, támogatott anyagra mutat.
+
+## 1. Elsődleges erőforrások
+
+| Cím/Link | Leírás |
+| :--- | :--- |
+| [Fine-tuning OpenAI modellekkel](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | A finomhangolás javítja a few-shot tanulást azáltal, hogy sokkal több példán tanít, mint ami a promptban elfér – csökkentve a költségeket, javítva a válasz minőségét és alacsonyabb késleltetésű kéréseket tesz lehetővé. **Ismerd meg az OpenAI finomhangolásának áttekintését.** |
+| [Mikor érdemes Microsoft Foundry finomhangolást használni](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Értsd meg, **mi az a finomhangolás (fogalom)**, miért érdemes fontolóra venni, milyen adatokat használj, és hogyan mérd a minőséget – valamint mikor a legjobb az SFT, DPO vagy RFT. |
+| [Egy modell testreszabása finomhangolással](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Az end-to-end **hogyan csináld (folyamat)** a Microsoft Foundry-ban a portál, az OpenAI / Foundry Python SDK vagy a REST API használatával – lefedve az adatelőkészítést, tréninget, ellenőrzőpontokat és telepítést. |
+| [Folyamatos finomhangolás](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Az iteratív folyamat, ahol egy már finomhangolt modellt választanak bázismodellnek, és **további finomhangolást végeznek** újabb tanító példákon. |
+| [Finomhangolás eszköz (funkció) hívással](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | A modell finomhangolása **eszközhívási példákkal** javítja a kimenetet – pontosabb, következetesebb, hasonló formátumú válaszok kevesebb prompt tokennel. |
+| [Modellek finomhangolása: Microsoft Foundry útmutató](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Nézd meg, **mely modellek finomhangolhatók**, milyen módszereket támogatnak (SFT / DPO / RFT), és mely régiókban érhetők el. |
+| [Finomhangolás áttekintése: technikák és modalitások](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Hasonlítsd össze a három tréningtechnikát (SFT, DPO, RFT) és a két modalitást (szerver nélküli vs. menedzselt számítás), iránymutatással a bázismodell választásához és a kezdéshez. |
+| **Gyakorlat**: [Finomhangolj egy modellt Microsoft Foundry-ban](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Hozz létre egy mintaadatot, készülj a finomhangolásra, futtass egy finomhangolási feladatot egy jelenleg támogatott modellen, mint pl. a `gpt-4.1-mini`, majd telepítsd a finomhangolt modellt Azure-on. |
+| **Gyakorlat**: [Finomhangolás szerver nélküli API telepítésekkel](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Igazítsd az open és partner modelleket (Phi, Llama, Mistral és mások) az adatkészleteidhez _alacsony kódolású, UI-alapú munkafolyamat segítségével_ Microsoft Foundry-ban. |
+| **Gyakorlat**: [Finomhangolás Hugging Face modelleken Azure Databricks-en](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Finomhangolj egy Hugging Face modellt a `transformers` könyvtárral egyetlen GPU-n Azure Databricks és a Hugging Face Trainer használatával. |
+| **Képzés**: [Finomhangolj egy alapmodellt Azure Machine Learning-gel](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Az Azure Machine Learning modellkatalógusa számos nyílt forráskódú modellt kínál, amelyeket finomhangolhatsz. A [Azure ML Generatív AI Tanulási Út](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) része. |
+| **Gyakorlat**: [Azure OpenAI finomhangolás Weights & Biases-szel](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Kövesd és elemezd a finomhangolási futásokat Azure-on W&B-vel. Kiterjeszti az OpenAI finomhangolási útmutatóját Azure-specifikus lépésekkel és kísérleti nyomon követéssel. |
+
+## 2. Másodlagos erőforrások
+
+Ez a szakasz további érdemes felfedezni való erőforrásokat tartalmaz, amelyeket a leckében nem volt időnk lefedni. Használd őket saját szakértelmed fejlesztésére ezen a témán belül.
+
+| Cím/Link | Leírás |
+| :--- | :--- |
+| **OpenAI Cookbook**: [Adatelőkészítés és elemzés chat modell finomhangoláshoz](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Előfeldolgozás és elemzés egy chat-adatkészleten a finomhangolás előtt: ellenőrizd a formátumhibákat, szerezz alapstatisztikákat és becsüld meg a token számokat (és költséget). Párban az [OpenAI finomhangolási útmutatóval](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **OpenAI Cookbook**: [Finomhangolás a Retrieval Augmented Generation (RAG) számára Qdrant segítségével](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Egy átfogó példa az OpenAI modellek finomhangolására RAG-hoz, integrálva Qdrantot és few-shot tanulást a teljesítmény növelése és a tévedések csökkentése érdekében. |
+| **OpenAI Cookbook**: [GPT finomhangolása Weights & Biases-szel](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Használd a W&B-t a modell tréning és finomhangolás követésére. Olvasd el az ő [OpenAI finomhangolás](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) útmutatójukat először, majd próbáld ki a Cookbook gyakorlatot. |
+| **Hugging Face Gyakorlati Útmutató**: [Hogyan finomhangold az LLM-eket Hugging Face TRL-lel](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Nyílt LLM-ek finomhangolása Hugging Face TRL, Transformers és adatkészletek használatával: határozz meg egy használati esetet, állítsd be a fejlesztői környezetet, készíts adatot, finomhangolj, értékelj, és telepíts. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Egy no-code / low-code könyvtár a Hugging Face-től, amely sok modell típus finomhangolását teszi lehetővé. Futtasd a saját felhődben, Hugging Face Spaces-en, vagy helyben GUI-val, CLI-vel, vagy YAML konfigurációval. |
+| **Unsloth**: [LLM finomhangolási útmutató](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Egy nyílt forráskódú keretrendszer, amely egyszerűsíti a helyi LLM finomhangolást és erősítéses tanulást, előre elkészített [notebookokkal](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst). |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Jogi nyilatkozat**:
+Ez a dokumentum az AI fordítási szolgáltatás, a [Co-op Translator](https://github.com/Azure/co-op-translator) segítségével készült. Bár az pontosságra törekszünk, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az anyanyelvén tekintendő hiteles forrásnak. Fontos információk esetén professzionális emberi fordítást javasolunk. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely ebből a fordításból ered.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

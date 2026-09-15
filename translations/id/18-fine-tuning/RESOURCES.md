@@ -1,0 +1,40 @@
+# Sumber Daya Untuk Pembelajaran Mandiri
+
+Pelajaran ini dibuat menggunakan sumber daya inti dari OpenAI dan Microsoft Foundry sebagai referensi untuk terminologi dan tutorial. Berikut adalah daftar tidak lengkap untuk perjalanan pembelajaran mandiri Anda sendiri. Setiap tautan di bawah ini mengarah ke materi yang saat ini didukung.
+
+## 1. Sumber Daya Utama
+
+| Judul/Tautan | Deskripsi |
+| :--- | :--- |
+| [Fine-tuning dengan Model OpenAI](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | Fine-tuning meningkatkan pembelajaran few-shot dengan melatih pada banyak contoh yang lebih banyak daripada yang bisa dimuat dalam prompt - menghemat biaya, meningkatkan kualitas respons, dan memungkinkan permintaan dengan latensi lebih rendah. **Dapatkan gambaran umum tentang fine-tuning dari OpenAI.** |
+| [Kapan menggunakan fine-tuning Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Pahami **apa itu fine-tuning (konsep)**, mengapa Anda harus mempertimbangkannya, data apa yang digunakan, dan bagaimana mengukur kualitas - serta kapan SFT, DPO, atau RFT adalah pilihan yang tepat. |
+| [Sesuaikan model dengan fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Proses **cara melakukan (langkah demi langkah)** fine-tuning di Microsoft Foundry menggunakan portal, OpenAI / Foundry Python SDK, atau REST API - mencakup persiapan data, pelatihan, checkpoint, dan penerapan. |
+| [Fine-tuning berkelanjutan](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Proses iteratif memilih model yang sudah fine-tuned sebagai model dasar dan **melakukan fine-tuning lebih lanjut** pada set contoh pelatihan baru. |
+| [Fine-tuning dengan pemanggilan alat (fungsi)](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Melakukan fine-tuning model Anda **dengan contoh pemanggilan alat** meningkatkan keluaran - respons yang lebih akurat, konsisten, dan terformat serupa menggunakan token prompt yang lebih sedikit. |
+| [Model fine-tuning: panduan Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Cari tahu **model mana yang dapat di-fine-tune**, metode yang didukung (SFT / DPO / RFT), dan wilayah tempat model tersebut tersedia. |
+| [Gambaran umum fine-tuning: teknik dan modalitas](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Bandingkan tiga teknik pelatihan (SFT, DPO, RFT) dan dua modalitas (serverless vs. managed compute), dengan panduan dalam memilih model dasar dan memulai. |
+| **Tutorial**: [Fine-tune model di Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Buat dataset contoh, siapkan untuk fine-tuning, jalankan pekerjaan fine-tuning pada model yang saat ini didukung seperti `gpt-4.1-mini`, dan terapkan model yang telah di-fine-tune di Azure. |
+| **Tutorial**: [Fine-tune model dengan penerapan API tanpa server](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Sesuaikan model terbuka dan mitra (Phi, Llama, Mistral, dan lainnya) ke dataset Anda _menggunakan alur kerja UI berbasis low-code_ di Microsoft Foundry. |
+| **Tutorial**: [Fine-tune model Hugging Face di Azure Databricks](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Fine-tune model Hugging Face dengan pustaka `transformers` pada satu GPU menggunakan Azure Databricks dan Hugging Face Trainer. |
+| **Pelatihan**: [Fine-tune model dasar dengan Azure Machine Learning](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Katalog model Azure Machine Learning menawarkan banyak model open-source yang bisa Anda fine-tune. Bagian dari [Jalur Pembelajaran AI Generatif Azure ML](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst). |
+| **Tutorial**: [Fine-tuning Azure OpenAI dengan Weights & Biases](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Lacak dan analisis jalannya fine-tuning di Azure dengan W&B. Memperluas panduan fine-tuning OpenAI dengan langkah dan pelacakan eksperimen spesifik Azure. |
+
+## 2. Sumber Daya Sekunder
+
+Bagian ini memuat sumber daya tambahan yang layak dijelajahi yang tidak sempat kami bahas dalam pelajaran. Gunakan untuk membangun keahlian Anda sendiri di topik ini.
+
+| Judul/Tautan | Deskripsi |
+| :--- | :--- |
+| **OpenAI Cookbook**: [Persiapan dan analisis data untuk fine-tuning model chat](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Pra-proses dan analisis dataset chat sebelum fine-tuning: periksa kesalahan format, dapatkan statistik dasar, dan perkiraan jumlah token (dan biaya). Pasangan dengan [panduan fine-tuning OpenAI](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **OpenAI Cookbook**: [Fine-tuning untuk Retrieval Augmented Generation (RAG) dengan Qdrant](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Contoh komprehensif fine-tuning model OpenAI untuk RAG, mengintegrasikan Qdrant dan pembelajaran few-shot untuk meningkatkan performa dan mengurangi fabrikasi. |
+| **OpenAI Cookbook**: [Fine-tuning GPT dengan Weights & Biases](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Gunakan W&B untuk melacak pelatihan dan fine-tuning model. Baca dulu panduan [Fine-Tuning OpenAI](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst), lalu coba latihan di Cookbook. |
+| **Tutorial Hugging Face**: [Cara Fine-Tune LLM dengan Hugging Face TRL](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Fine-tune LLM terbuka menggunakan Hugging Face TRL, Transformers, dan dataset: definisikan kasus penggunaan, siapkan lingkungan pengembangan, persiapkan dataset, fine-tune, evaluasi, dan terapkan. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Perpustakaan tanpa kode / low-code dari Hugging Face untuk fine-tuning banyak tipe model. Jalankan di cloud Anda sendiri, di Hugging Face Spaces, atau secara lokal melalui GUI, CLI, atau konfigurasi YAML. |
+| **Unsloth**: [Panduan Fine-tuning LLM](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Kerangka kerja open-source yang menyederhanakan fine-tuning LLM lokal dan pembelajaran penguatan, dengan [notebook](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst) siap pakai. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Penafian**:
+Dokumen ini telah diterjemahkan menggunakan layanan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Meskipun kami berupaya untuk mencapai akurasi, harap diketahui bahwa terjemahan otomatis mungkin mengandung kesalahan atau ketidakakuratan. Dokumen asli dalam bahasa aslinya harus dianggap sebagai sumber yang sah. Untuk informasi penting, disarankan menggunakan terjemahan profesional oleh manusia. Kami tidak bertanggung jawab atas kesalahpahaman atau penafsiran yang keliru yang timbul dari penggunaan terjemahan ini.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

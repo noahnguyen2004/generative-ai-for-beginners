@@ -1,24 +1,21 @@
 from openai import OpenAI
 import os
-import dotenv
+from dotenv import load_dotenv
 
-# import dotenv
-dotenv.load_dotenv()
+# load environment variables from .env file
+load_dotenv()
 
 # configure OpenAI service client 
 client = OpenAI()
-
-#deployment=os.environ['OPENAI_DEPLOYMENT']
-deployment="gpt-3.5-turbo"
+deployment = "gpt-5-mini"
 
 # add your completion code
 prompt = "Complete the following: Once upon a time there was a"
-messages = [{"role": "user", "content": prompt}]  
-# make completion
-completion = client.chat.completions.create(model=deployment, messages=messages)
+# make a request using the Responses API
+response = client.responses.create(model=deployment, input=prompt, store=False)
 
 # print response
-print(completion.choices[0].message.content)
+print(response.output_text)
 
 #  very unhappy _____.
 

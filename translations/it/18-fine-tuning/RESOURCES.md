@@ -1,0 +1,40 @@
+# Risorse per l'Apprendimento Autonomo
+
+La lezione è stata costruita utilizzando risorse principali di OpenAI e Microsoft Foundry come riferimenti per la terminologia e i tutorial. Ecco un elenco non esaustivo per i tuoi viaggi di apprendimento autonomo. Ogni link sottostante punta a materiale attuale e supportato.
+
+## 1. Risorse Principali
+
+| Titolo/Link | Descrizione |
+| :--- | :--- |
+| [Fine-tuning with OpenAI Models](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | Il fine-tuning migliora l’apprendimento da pochi esempi addestrando su molti più esempi di quanti ne possano stare nel prompt - risparmiando costi, migliorando la qualità delle risposte e abilitando richieste a latenza minore. **Ottieni una panoramica sul fine-tuning da OpenAI.** |
+| [When to use Microsoft Foundry fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | Comprendi **cos’è il fine-tuning (concetto)**, perché dovresti considerarlo, quali dati usare e come misurare la qualità - più quando SFT, DPO o RFT è la soluzione giusta. |
+| [Customize a model with fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Il **come fare (processo)** end-to-end per il fine-tuning in Microsoft Foundry usando il portale, l’SDK Python OpenAI / Foundry o la REST API - coprendo la preparazione dati, l’addestramento, i checkpoint e il deployment. |
+| [Continuous fine-tuning](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Il processo iterativo di selezionare un modello già fine-tuned come modello base e **continuare a perfezionarlo** su nuovi set di esempi di addestramento. |
+| [Fine-tuning with tool (function) calling](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Il fine-tuning del modello **con esempi di chiamata di funzioni** migliora l’output - risposte più accurate, coerenti e formattate in modo simile usando meno token nel prompt. |
+| [Fine-tuning models: Microsoft Foundry guidance](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | Consulta **quali modelli possono essere fine-tuned**, i metodi supportati (SFT / DPO / RFT) e le regioni dove sono disponibili. |
+| [Fine-tuning overview: techniques and modalities](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Confronta le tre tecniche di addestramento (SFT, DPO, RFT) e le due modalità (serverless vs. managed compute), con indicazioni sulla scelta del modello base e come iniziare. |
+| **Tutorial**: [Fine-tune a model in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Crea un dataset di esempio, preparati per il fine-tuning, esegui un lavoro di fine-tuning su un modello attualmente supportato come `gpt-4.1-mini`, e distribuisci il modello fine-tuned su Azure. |
+| **Tutorial**: [Fine-tune models with serverless API deployments](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Adatta modelli open e partner (Phi, Llama, Mistral e altri) ai tuoi dataset _usando un flusso di lavoro a basso codice e basato su UI_ in Microsoft Foundry. |
+| **Tutorial**: [Fine-tune Hugging Face models on Azure Databricks](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Esegue il fine-tuning di un modello Hugging Face con la libreria `transformers` su una singola GPU usando Azure Databricks e l’Hugging Face Trainer. |
+| **Training**: [Fine-tune a foundation model with Azure Machine Learning](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Il catalogo modelli di Azure Machine Learning offre molti modelli open source che puoi fine-tunare. Parte del [Percorso di Apprendimento AI Generativa Azure ML](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst). |
+| **Tutorial**: [Azure OpenAI fine-tuning with Weights & Biases](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Traccia e analizza le esecuzioni di fine-tuning su Azure con W&B. Estende la guida OpenAI fine-tuning con passaggi specifici per Azure e monitoraggio degli esperimenti. |
+
+## 2. Risorse Secondarie
+
+Questa sezione raccoglie risorse aggiuntive che vale la pena esplorare e che non abbiamo avuto tempo di coprire nella lezione. Usale per costruire la tua expertise su questo tema.
+
+| Titolo/Link | Descrizione |
+| :--- | :--- |
+| **OpenAI Cookbook**: [Preparazione e analisi dati per fine-tuning del modello chat](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | Preprocessa e analizza un dataset di chat prima del fine-tuning: controlla errori di formato, ottieni statistiche di base e stima il conteggio token (e costi). Insieme alla [guida fine-tuning OpenAI](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst). |
+| **OpenAI Cookbook**: [Fine-tuning per Retrieval Augmented Generation (RAG) con Qdrant](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | Un esempio completo di fine-tuning dei modelli OpenAI per RAG, integrando Qdrant e il few-shot learning per migliorare le prestazioni e ridurre le invenzioni. |
+| **OpenAI Cookbook**: [Fine-tuning GPT con Weights & Biases](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Usa W&B per tracciare l’addestramento e il fine-tuning del modello. Leggi prima la loro guida [OpenAI Fine-Tuning](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst), poi prova l’esercizio del Cookbook. |
+| **Tutorial Hugging Face**: [Come fare il fine-tuning degli LLM con Hugging Face TRL](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Fai il fine-tuning di LLM open usando Hugging Face TRL, Transformers e datasets: definisci un caso d’uso, configura l’ambiente di sviluppo, prepara un dataset, fine-tuning, valuta e distribuisci. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Una libreria no-code / low-code di Hugging Face per il fine-tuning di molti tipi di modelli. Eseguila nel tuo cloud, su Hugging Face Spaces o localmente via GUI, CLI o configurazione YAML. |
+| **Unsloth**: [Guida al fine-tuning degli LLM](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Un framework open-source che semplifica il fine-tuning locale degli LLM e l’apprendimento per rinforzo, con [notebook](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst) pronti all’uso. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Disclaimer**:
+Questo documento è stato tradotto utilizzando il servizio di traduzione AI [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire la precisione, si prega di notare che le traduzioni automatizzate possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa deve essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un essere umano. Non siamo responsabili per eventuali malintesi o interpretazioni errate derivanti dall’uso di questa traduzione.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

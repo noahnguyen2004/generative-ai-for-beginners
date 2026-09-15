@@ -1,0 +1,40 @@
+# Kendi Kendine Öğrenme İçin Kaynaklar
+
+Ders, terminoloji ve eğitimler için referans olarak OpenAI ve Microsoft Foundry'nin temel kaynakları kullanılarak oluşturuldu. İşte kendi kendinize öğrenme yolculuklarınız için kapsamlı olmayan bir liste. Aşağıdaki her bağlantı güncel ve desteklenen materyallere işaret eder.
+
+## 1. Birincil Kaynaklar
+
+| Başlık/Bağlantı | Açıklama |
+| :--- | :--- |
+| [OpenAI Modelleri ile İnce Ayar](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | İnce ayar, az sayıda örnekle öğrenmeye göre çok daha fazla örnek üzerinde eğitim yaparak geliştirmeyi sağlar - maliyetleri düşürür, yanıt kalitesini artırır ve daha düşük gecikmeli istekler yapılmasını mümkün kılar. **OpenAI'den ince ayar hakkında bir genel bakış alın.** |
+| [Microsoft Foundry ince ayar ne zaman kullanılmalı](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | **İnce ayar kavramının ne olduğunu**, neden düşünmeniz gerektiğini, hangi veriyi kullanacağınızı ve kaliteyi nasıl ölçeceğinizi anlayın - ayrıca SFT, DPO veya RFT hangisinin uygun olduğuna dair bilgiler. |
+| [İnce ayar ile bir modeli özelleştirin](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Microsoft Foundry'de portal, OpenAI / Foundry Python SDK, veya REST API kullanarak ince ayarın uçtan uca **nasıl yapılacağı (süreç)** - veri hazırlama, eğitim, kontrol noktaları ve dağıtımı kapsar. |
+| [Sürekli ince ayar](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | Daha önce ince ayar yapılmış bir modeli baz model olarak seçip yeni eğitim örnekleri kümeleri üzerinde **daha ileri ince ayar** yapma sürecinin iteratif hali. |
+| [Araç (fonksiyon) çağrısı ile ince ayar](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | Modelinizi araç çağrısı örnekleri ile **ince ayar yaparak** çıktıyı geliştirin - daha doğru, tutarlı ve benzer biçimlendirilmiş yanıtlar, daha az istemci token kullanımıyla. |
+| [Modellerin ince ayarı: Microsoft Foundry rehberi](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | **Hangi modellerin ince ayar yapılabildiğini**, destekledikleri yöntemleri (SFT / DPO / RFT) ve erişilebilir oldukları bölgeleri görüntüleyin. |
+| [İnce ayar genel bakış: teknikler ve modlar](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | Üç eğitim tekniğini (SFT, DPO, RFT) ve iki modu (sunucusuz vs yönetilen hesaplama) karşılaştırın, baz modeli seçme ve başlamaya yönelik rehberlik ile. |
+| **Eğitim**: [Microsoft Foundry’de bir modeli ince ayar yapma](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | Örnek bir veri seti oluşturun, ince ayar için hazırlanın, şu anda desteklenen `gpt-4.1-mini` gibi bir model üzerinde ince ayar işi çalıştırın ve ince ayarlı modeli Azure'da dağıtın. |
+| **Eğitim**: [Sunucusuz API dağıtımları ile modelleri ince ayar yapma](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Microsoft Foundry’de düşük kodlu, arayüz tabanlı bir iş akışı kullanarak açık ve ortak modelleri (Phi, Llama, Mistral ve daha fazlası) veri setlerinize göre özelleştirin. |
+| **Eğitim**: [Azure Databricks üzerinde Hugging Face modellerini ince ayar yapma](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Azure Databricks ve Hugging Face Trainer kullanarak tek GPU üzerinde `transformers` kütüphanesi ile Hugging Face modelini ince ayar yapın. |
+| **Eğitim**: [Azure Machine Learning ile temel bir modeli ince ayar yapma](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Azure Machine Learning model kataloğu, ince ayar yapabileceğiniz birçok açık kaynak modeli sunar. Bu, [Azure ML Üretken Yapay Zeka Öğrenme Yolu](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) kapsamında. |
+| **Eğitim**: [Azure OpenAI ince ayarını Weights & Biases ile yapma](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | Azure üzerinde W&B ile ince ayar çalışmalarını takip edin ve analiz edin. OpenAI ince ayar kılavuzunu Azure'a özgü adımlar ve deney takibi ile genişletir. |
+
+## 2. İkincil Kaynaklar
+
+Bu bölüm, derste zaman ayıramadığımız ancak keşfetmeye değer ek kaynakları içerir. Bu kaynakları kullanarak bu konudaki kendi uzmanlığınızı geliştirebilirsiniz.
+
+| Başlık/Bağlantı | Açıklama |
+| :--- | :--- |
+| **OpenAI Tarif Defteri**: [Sohbet modeli ince ayarı için veri hazırlama ve analiz](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | İnce ayar öncesi sohbet veri setini ön işler ve analiz eder: format hatalarını kontrol eder, temel istatistikleri alır ve token sayısını (ve maliyeti) tahmin eder. [OpenAI ince ayar rehberi](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) ile birleştirilir. |
+| **OpenAI Tarif Defteri**: [Qdrant ile Retrieval Augmented Generation (RAG) için ince ayar](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | RAG için OpenAI modellerini ince ayar yapmaya kapsamlı bir örnek, Qdrant entegrasyonu ve az sayıda örnekle öğrenerek performansı artırır ve uydurma yanıtları azaltır. |
+| **OpenAI Tarif Defteri**: [Weights & Biases ile GPT ince ayar yapmak](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | Model eğitim ve ince ayar süreçlerini W&B ile takip edin. Öncelikle [OpenAI İnce Ayar](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) rehberini okuyun, ardından Tarif Defteri egzersizini deneyin. |
+| **Hugging Face Eğitimi**: [Hugging Face TRL ile LLM'leri nasıl ince ayar yapılır](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Hugging Face TRL, Transformers ve veri setleri kullanarak açık LLM'leri ince ayar yapın; kullanım senaryosu tanımlayın, geliştirme ortamı kurun, veri seti hazırlayın, ince ayar yapın, değerlendirin ve dağıtın. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | Hugging Face’den çok sayıda model türü için kodsuz / az kodlu bir ince ayar kütüphanesi. Kendi bulutunuzda, Hugging Face Spaces’te veya yerelde GUI, CLI ya da YAML yapılandırması ile çalıştırın. |
+| **Unsloth**: [LLM İnce Ayar Kılavuzu](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | Yerel LLM ince ayarını ve pekiştirmeli öğrenmeyi kolaylaştıran açık kaynaklı bir çerçeve, kullanıma hazır [notebook’lar](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst) ile birlikte. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Feragatname**:
+Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba sarf etsek de, otomatik çevirilerin hata veya yanlışlık içerebileceğini lütfen unutmayınız. Orijinal belge, kendi dilinde yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımı sonucu ortaya çıkabilecek yanlış anlamalardan veya yanlış yorumlamalardan sorumlu değiliz.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

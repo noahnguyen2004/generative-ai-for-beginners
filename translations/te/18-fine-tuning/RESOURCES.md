@@ -1,0 +1,40 @@
+# స్వీయనిర్దేశిత అభ్యాసం కోసం వనరులు
+
+పాఠం OpenAI మరియు Microsoft Foundry యొక్క కోర్ వనరులను పదజాలం మరియు పాఠ్యపుస్తకాల కోసం సూచనలుగా ఉపయోగిస్తూ నిర్మించబడింది. మీ స్వీయనిర్దేశిత శిక్షణ ప్రయాణాల కోసం ఇది పూర్తిగా కవర్ చేయని సూచిక. క్రింది ప్రతి లింక్ ప్రస్తుతానికి మద్దతు ఉన్న, ప్రామాణిక అంశాలను సూచిస్తుంది.
+
+## 1. ప్రాథమిక వనరులు
+
+| శీర్షిక/లింక్ | వివరణ |
+| :--- | :--- |
+| [OpenAI మోడల్స్‌తో ఫైన్-ట్యూనింగ్](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) | ఫైన్-ట్యూనింగ్ పరోక్షంగా కొద్దిగా విద్యార్థులుగా నేర్చుకోవటం కన్నా ఎక్కువ ఉదాహరణలపై శిక్షణ ఇస్తుంది - ఖర్చులను ఆదా చేస్తుంది, ప్రతిస్పందన నాణ్యత మెరుగుపరుస్తుంది, మరియు తక్కువ ఆలస్యం ఉన్న అభ్యర్థనలను సవరించే అవకాశం కల్పిస్తుంది. **OpenAI నుండి ఫైన్-ట్యూనింగ్ అవగాహన పొందండి.** |
+| [ఏ సమయంలో Microsoft Foundry ఫైన్-ట్యూనింగ్ వాడాలి](https://learn.microsoft.com/azure/ai-foundry/openai/concepts/fine-tuning-considerations?WT.mc_id=academic-105485-koreyst) | **ఫైన్-ట్యూనింగ్ అంటే ఏమిటి (కాన్సెప్ట్)**, దాన్ని ఎందుకు పరిగణించాలి, ఏ డేటాను ఉపయోగించాలి, మరియు నాణ్యత ఎలా కొలవాలి తెలుసుకోండి - అలాగే ఎప్పుడు SFT, DPO, లేదా RFT సరైనదో తెలుసుకోండి. |
+| [ఫైన్-ట్యూనింగ్‌తో మోడల్‌ను వ్యక్తిగతీకరించండి](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst) | Microsoft Foundryలో పోర్టల్, OpenAI / Foundry Python SDK లేదా REST API ఉపయోగించి ఫైన్-ట్యూనింగ్ కోసం ఎండు-టు-ఎండు **ఎలా చేయాలో (ప్రక్రియ)** - డేటా సిద్ధం, శిక్షణ, చెక్‌పాయింట్లు మరియు అమరిక. |
+| [అనంత ఫైన్-ట్యూనింగ్](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning?WT.mc_id=academic-105485-koreyst#perform-continuous-fine-tuning) | ఇప్పటికే ఫైన్-ట్యూన్డ్ మోడల్‌ను బేస్ మోడల్‌గా తీసుకుని కొత్త శిక్షణ ఉదాహరణలపై **మరింత ఫైన్-ట్యూనింగ్ చేయడం** యొక్క పునరావృత ప్రక్రియ. |
+| [సాధనం (ఫంక్షన్) కాలింగ్‌తో ఫైన్-ట్యూనింగ్](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/fine-tuning-functions?WT.mc_id=academic-105485-koreyst) | మీ మోడల్‌ను **సాధనం-కాల్ ఉదాహరణలతో** ఫైన్-ట్యూన్ చేయడం అవుట్పుట్‌ను మెరుగుపరుస్తుంది - ఎక్కువ ఖచ్చితమైన, సారూప్య, ఎటువంటి ప్రాంప్ట్ టోకెన్లు తక్కువగా ఉపయోగించే ప్రతిస్పందనలు. |
+| [ఫైన్-ట్యూనింగ్ మోడల్స్: Microsoft Foundry మార్గదర్శకము](https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?WT.mc_id=academic-105485-koreyst#fine-tuning-models) | **ఏ మోడల్స్ ఫైన్-ట్యూన్ చేయవచ్చు**, అవి మద్దతు ఇచ్చే విధానాలు (SFT / DPO / RFT), మరియు అందుబాటులో ఉన్న ప్రాంతాలన్నిటిని తెలుసుకోండి. |
+| [ఫైన్-ట్యూనింగ్ అవలోకనం: సాంకేతికతలు మరియు రూపరేఖలు](https://learn.microsoft.com/azure/ai-foundry/concepts/fine-tuning-overview?WT.mc_id=academic-105485-koreyst) | మూడు శిక్షణ సాంకేతికతలు (SFT, DPO, RFT) మరియు రెండు మోడ్‌లు (సర్వర్‌లెస్ vs. నిర్వహించే కంప్యూట్) తో సరిపోల్చండి, బేస్ మోడల్ ఎంచుకోవడంపై సూచనలు మరియు ప్రారంభించడం గురించి. |
+| **పాఠ్యపుస్తകം**: [Microsoft Foundryలో మోడల్‌ను ఫైన్-ట్యూన్ చేయండి](https://learn.microsoft.com/azure/ai-foundry/openai/tutorials/fine-tune?WT.mc_id=academic-105485-koreyst) | ఒక నమూనా డేటాసెట్ సృష్టించి, ఫైన్-ట్యూనింగ్ కు సిద్ధం అయ్యి, ప్రస్తుతం మద్దతు ఉన్న `gpt-4.1-mini` వంటి మోడల్ పై ఫైన్-ట్యూనింగ్ జాబ్ నిర్వహించి, ఆపై Azureలో ఫైన్-ట్యూన్డ్ మోడల్‌ను అమలు చేయండి. |
+| **పాఠ్యపుస్తకం**: [సర్వర్‌లెస్ API అమరికలతో మోడల్స్‌ను ఫైన్-ట్యూన్ చేయండి](https://learn.microsoft.com/azure/ai-foundry/how-to/fine-tune-serverless?WT.mc_id=academic-105485-koreyst) | Microsoft Foundryలో ఒక తక్కువ కోడ్, UI ఆధారిత వర్క్‌ఫ్లో ఉపయోగించి మీ డేటాసెట్స్‌కు అనుగుణంగా (Phi, Llama, Mistral, మరియు ఇతర ఓపెన్ & భాగస్వామి మోడల్స్) ను సవరించండి. |
+| **పాఠ్యపుస్తకం**: [Azure Databricksలో Hugging Face మోడల్స్‌ను ఫైన్-ట్యూన్ చేయండి](https://learn.microsoft.com/azure/databricks/machine-learning/train-model/huggingface/fine-tune-model?WT.mc_id=academic-105485-koreyst) | Azure Databricks మరియు Hugging Face Trainer ఉపయోగించి `transformers` లైబ్రరీతో ఒక GPUలో Hugging Face మోడల్‌ను ఫైన్-ట్యూన్ చేయండి. |
+| **శిక్షణ**: [Azure Machine Learningతో ఫౌండేషన్ మోడల్‌ను ఫైన్-ట్యూన్ చేయండి](https://learn.microsoft.com/training/modules/finetune-foundation-model-with-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) | Azure Machine Learning మోడల్ క్యాటలాగ్‌లో మీరు ఫైన్-ట్యూన్ చేయగలిగే అనేక ఓపెన్-సోర్స్ మోడల్స్ ఉన్నాయి. ఇది [Azure ML Generative AI Learning Path](https://learn.microsoft.com/training/paths/work-with-generative-models-azure-machine-learning/?WT.mc_id=academic-105485-koreyst) లో భాగం. |
+| **పాఠ్యపుస్తకం**: [Weights & Biases తో Azure OpenAI ఫైన్-ట్యూనింగ్](https://docs.wandb.ai/guides/integrations/azure-openai-fine-tuning?WT.mc_id=academic-105485-koreyst) | W&B తో Azureపై ఫైన్-ట్యూనింగ్ రన్స్‌ని ట్రాక్ చేసి విశ్లేషించండి. OpenAI ఫైన్-ట్యూనింగ్ గైడ్‌ను Azure-నిజమైన దశలతో మరియు ప్రయోగ ట్రాకింగ్‌తో విస్తరించింది. |
+
+## 2. ద్వితీయ వనరులు
+
+ఈ విభాగం పాఠంలో కవర్ చేయడాని కి సమయం దొరకనిది అయిన కానీ అధ్యయనం కోసం పరిశీలించదగిన అదనపు వనరులను తీసుకొస్తుంది. ఈ విషయంపై మీ స్వంత నైపుణ్యం పెంపొందించడానికి వీటిని ఉపయోగించండి.
+
+| శీర్షిక/లింక్ | వివరణ |
+| :--- | :--- |
+| **OpenAI కుక్‌బుక్**: [చాట్ మోడల్ ఫైన్-ట్యూనింగ్ కోసం డేటా సిద్ధం మరియు విశ్లేషణ](https://cookbook.openai.com/examples/chat_finetuning_data_prep?WT.mc_id=academic-105485-koreyst) | ఫైన్-ట్యూనింగ్ ముందు చాట్ డేటాసెట్‌ను ప్రీప్రాసెస్ చేసి విశ్లేషించండి: ఫార్మాట్ లోపాలు చెక్ చేయండి, ప్రాథమిక గణాంకాలు పొందండి, టోకెన్ లెక్కింపు (మరియు ఖర్చు) అంచనా వేయండి. [OpenAI ఫైన్-ట్యూనింగ్ గైడ్](https://platform.openai.com/docs/guides/fine-tuning?WT.mc_id=academic-105485-koreyst) తో జతను పొందుతుంది. |
+| **OpenAI కుక్‌బుక్**: [Retrieval Augmented Generation (RAG) కోసం Qdrant తో ఫైన్-ట్యూనింగ్](https://cookbook.openai.com/examples/fine-tuned_qa/ft_retrieval_augmented_generation_qdrant?WT.mc_id=academic-105485-koreyst) | RAG కొరకు OpenAI మోడల్స్ ను ఫైన్-ట్యూనింగ్ చేసే సమగ్ర ఉదాహరణ, ఇది Qdrant మరియు కొద్దిసార్లు నేర్చుకోనే విధానాన్ని సమన్వయపరుస్తుంది, ప్రదర్శనను పెంచి తప్పిదాలను తగ్గిస్తుంది. |
+| **OpenAI కుక్‌బుక్**: [Weights & Biases తో GPT ఫైన్-ట్యూనింగ్](https://cookbook.openai.com/examples/third_party/gpt_finetuning_with_wandb?WT.mc_id=academic-105485-koreyst) | మోడల్ శిక్షణ మరియు ఫైన్-ట్యూనింగ్‌ను ట్రాక్ చేయడానికి W&B వాడండి. మొదట వారి [OpenAI ఫైన్-ట్యూనింగ్](https://docs.wandb.ai/guides/integrations/openai-fine-tuning/?WT.mc_id=academic-105485-koreyst) గైడ్ చదవండి, ఆపై కుక్‌బుక్ వ్యాయామాన్ని ప్రయత్నించండి. |
+| **Hugging Face పాఠ్యపుస్తకం**: [Hugging Face TRL తో LLMs ను ఎలా ఫైన్-ట్యూన్ చేయాలి](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl?WT.mc_id=academic-105485-koreyst) | Hugging Face TRL, Transformers మరియు డేటాసెట్లను ఉపయోగించి ఓపెన్ LLMs ను ఫైన్-ట్యూనింగ్ చేయండి: ఉపయోగం సందర్భాన్ని నిర్వచించండి, అభివృద్ధి వాతావరణాన్ని సెట్ చేయండి, డేటాసెట్ సిద్ధం చేస్తారు, ఫైన్-ట్యూన్ చేసి, అంచనా వేసి, అమలు చేయండి. |
+| **Hugging Face**: [AutoTrain Advanced](https://github.com/huggingface/autotrain-advanced?WT.mc_id=academic-105485-koreyst) | అనేక మోడల్ రకాలను ఫైన్-ట్యూనింగ్ కోసం Hugging Face అందించే నో-కోడ్ / లో-కోడ్ లైబ్రరీ. మీ స్వంత క్లౌడ్‌లో, Hugging Face Spacesలో, లేదా GUI, CLI లేదా YAML కంకన్ఫిగరేషన్‌ ద్వారా లోకల్‌గా అమలు చేయొచ్చు. |
+| **Unsloth**: [ఫైన్-ట్యూనింగ్ LLMs గైడ్](https://docs.unsloth.ai/get-started/fine-tuning-llms-guide) | స్థానిక LLM ఫైన్-ట్యూనింగ్ మరియు రీఫోర్స్మెంట్ లెర్నింగ్‌ను సులభతరం చేసే ఓపెన్-సోర్స్ ఫ్రేమ్‌వర్క్, సిద్ధంగా ఉన్న [నోట్‌బుక్స్](https://github.com/unslothai/notebooks?WT.mc_id=academic-105485-koreyst)తో. |
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**అస్వీకరణ**:
+ఈ పత్రం AI అనువాద సేవ [Co-op Translator](https://github.com/Azure/co-op-translator) ఉపయోగించి అనువదించబడింది. మేము ఖచ్చితత్వానికి ప్రయత్నిస్తున్నప్పటికీ, ఆటోమేటెడ్ అనువాదాలు తప్పులు లేదా అసమగ్రతలను కలిగి ఉండవచ్చు. దాని స్వదేశ భాషలో ఉన్న అసలు పత్రాన్ని అధికారం కలిగిన మూలంగా పరిగణించాలి. కీలకమైన సమాచారం కోసం, ప్రొఫెషనల్ మానవ అనువాదాన్ని సిఫారసు చేస్తాము. ఈ అనువాదం ఉపయోగం వల్ల కలిగే ఏవైనా అపార్థాలు లేదా తప్పుదారులు కోసం మేము బాధ్యత వహించము.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->
